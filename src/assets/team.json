@@ -1,0 +1,70 @@
+{
+  "team": [{
+      "title": "Dr",
+      "role": "Associate Professor",
+      "firstname": "Trent",
+      "surname": "Penman"
+    },
+    {
+      "title": "Dr",
+      "role": "Research Fellow",
+      "firstname": "Jane",
+      "surname": "Cawson"
+    },
+    {
+      "title": "Dr",
+      "role": "Research Fellow",
+      "firstname": "Thomas",
+      "surname": "Duff"
+    },
+
+    {
+      "title": "",
+      "role": "Research Assistant",
+      "firstname": "Bianca",
+      "surname": "Tumino"
+    },
+    {
+      "title": "",
+      "role": "PhD Student",
+      "firstname": "Sarah",
+      "surname": "McColl-Gausden"
+    },
+    {
+      "title": "",
+      "role": "PhD Student",
+      "firstname": "Geofe",
+      "surname": "Cadiz"
+    },
+    {
+      "title": "",
+      "role": "Software Developer",
+      "firstname": "Dan",
+      "surname": "Ababei"
+    },
+    {
+      "title": "Dr",
+      "role": "Research Fellow",
+      "firstname": "Alex",
+      "surname": "Filkov"
+    },
+    {
+      "title": "",
+      "role": "Software Developer",
+      "firstname": "Denis",
+      "surname": "Kultae"
+    },
+    {
+      "title": "",
+      "role": "Research Fellow",
+      "firstname": "Anthony",
+      "surname": "Rawlins"
+    },
+    {
+      "title": "",
+      "role": "Research Assistant",
+      "firstname": "Brett",
+      "surname": "Cirulis"
+    }
+  ]
+}

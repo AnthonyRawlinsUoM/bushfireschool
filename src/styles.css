@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+
+.special-regular {
+    font-family: 'Noto Serif', serif !important;
+    font-weight: 400 !important;
+    font-size-adjust: auto;
+}
+
+.special-bold,
+a.ui.item,
+.ui.menu *,
+form.ui *,
+.ui.label,
+.ui.button,
+.ui.header {
+    font-family: 'Noto Serif', serif !important;
+    font-weight: 500 !important;
+    font-size-adjust: auto;
+}
