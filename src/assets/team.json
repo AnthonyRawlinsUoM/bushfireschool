@@ -1,5 +1,4 @@
-{
-  "team": [{
+[{
       "title": "Dr",
       "role": "Associate Professor",
       "firstname": "Trent",
@@ -67,4 +66,3 @@
       "surname": "Cirulis"
     }
   ]
-}

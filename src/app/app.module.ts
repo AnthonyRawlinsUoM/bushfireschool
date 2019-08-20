@@ -4,7 +4,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { ParticlesModule } from './particles/particles.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,8 +17,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ResearchComponent } from './research/research.component';
 import { CourseworkComponent } from './coursework/coursework.component';
 import { ContactComponent } from './footer/contact/contact.component';
-
+import { ParticlesComponent } from './particles/particles.component';
 import { routerTransition } from './router.animations';
+import { OpportunitiesComponent } from './opportunities/opportunities.component';
 
 @NgModule({
   declarations: [
@@ -34,14 +34,15 @@ import { routerTransition } from './router.animations';
     ResearchComponent,
     CourseworkComponent,
     ContactComponent,
-    TeamMemberComponent
+    TeamMemberComponent,
+    ParticlesComponent,
+    OpportunitiesComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-    ParticlesModule,
     FormsModule,
     ReactiveFormsModule
   ],

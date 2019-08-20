@@ -19,6 +19,6 @@ export class TeamService {
   constructor(private http: HttpClient) { }
 
   public getTeam() {
-    return this.http.get<TeamMember[]>(this.configUrl);
+    return this.http.get<TeamMember>(this.configUrl);
   }
 }

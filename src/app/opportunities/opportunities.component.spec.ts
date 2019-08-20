@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParticleSystemComponent } from './particle-system.component';
+import { OpportunitiesComponent } from './opportunities.component';
 
-describe('ParticleSystemComponent', () => {
-  let component: ParticleSystemComponent;
-  let fixture: ComponentFixture<ParticleSystemComponent>;
+describe('OpportunitiesComponent', () => {
+  let component: OpportunitiesComponent;
+  let fixture: ComponentFixture<OpportunitiesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ParticleSystemComponent ]
+      declarations: [ OpportunitiesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParticleSystemComponent);
+    fixture = TestBed.createComponent(OpportunitiesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
