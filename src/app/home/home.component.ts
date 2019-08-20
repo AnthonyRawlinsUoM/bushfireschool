@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ParticleSystemComponent } from '../particles/particle-system/particle-system.component';
 
 @Component({
   selector: 'app-home',

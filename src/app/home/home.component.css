@@ -1,5 +1,17 @@
-.smoke {
-    
+.ui.smoke {
+    min-height: 400px;
+/*    width:100%; */
+margin: 0;
+padding:0;
+}
+
+#mast {
+    position: absolute;
+    min-height: 400px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:200;
 }
 
 .masthead .logo.item img {

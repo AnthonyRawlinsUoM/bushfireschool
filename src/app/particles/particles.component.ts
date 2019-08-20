@@ -1,11 +1,9 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+
+import { Component, OnInit, Input, Output, ElementRef, ViewChild, Renderer, OnDestroy, AfterViewInit } from '@angular/core';
 import * as p5 from 'p5';
 import * as p5dom from 'p5/lib/addons/p5.dom';
-import * as p5sound from 'p5/lib/addons/p5.sound';
 
-declare var p5sound: any;
-
-let colormap = require('colormap');
+import * as colormap from 'colormap';
 
 let colors = colormap({
   colormap: 'hot',
@@ -19,8 +17,11 @@ let colors = colormap({
   templateUrl: './particles.component.html',
   styleUrls: ['./particles.component.css']
 })
-export class ParticlesComponent implements OnInit, OnDestroy {
+export class ParticlesComponent implements OnInit, AfterViewInit, OnDestroy {
+  @ViewChild('particles', { static: false }) particleCanvas: ElementRef;
 
+  canvasWidth: number;
+  canvasHeight: number;
 
   private p5;
   //private p5sound;
@@ -36,6 +37,13 @@ export class ParticlesComponent implements OnInit, OnDestroy {
     console.log('particles-init');
     this.createCanvas();
   }
+  ngAfterViewInit() {
+    this.canvasWidth = this.particleCanvas.nativeElement.offsetWidth;
+    this.canvasHeight = this.particleCanvas.nativeElement.offsetHeight;
+    console.log(this.canvasWidth, this.canvasHeight);
+    this.p5.resizeCanvas(this.particleCanvas.nativeElement.offsetWidth, this.particleCanvas.nativeElement.offsetHeight);
+    this.p5.setup();
+  }
 
   ngOnDestroy(): void {
     this.createCanvas();
@@ -43,7 +51,7 @@ export class ParticlesComponent implements OnInit, OnDestroy {
   }
 
   private onWindowResize = (e) => {
-    this.p5.resizeCanvas(this.p5.windowWidth, this.p5.windowHeight);
+    this.p5.resizeCanvas(this.particleCanvas.nativeElement.offsetWidth, this.particleCanvas.nativeElement.offsetHeight);
     this.p5.setup();
   }
 
@@ -51,7 +59,7 @@ export class ParticlesComponent implements OnInit, OnDestroy {
     console.log('creating particles canvas');
     if (this.toggle) {
       console.log(p5);
-      this.p5 = new p5(this.drawing, 'webgl');
+      this.p5 = new p5(this.drawing);
       this.toggle = !this.toggle;
     } else {
       this.p5.noCanvas();
@@ -63,6 +71,7 @@ export class ParticlesComponent implements OnInit, OnDestroy {
 
     let particle_limit = 68;
     p.target_framerate = 60;
+
 
     // let Environment = function() {
     //     this.wind = p.createVector(p.random(-2, 2), p.random(-2, 2));
@@ -136,12 +145,12 @@ export class ParticlesComponent implements OnInit, OnDestroy {
 
 
     p.setup = () => {
-      p.createCanvas(p.windowWidth, p.windowHeight).parent('particles-canvas');
+      p.createCanvas(p.width, p.height, 'webgl').parent('particles-canvas');
       p.angleMode(p.DEGREES);
       p.rectMode(p.CENTER);
       p.background(0);
       p.frameRate(p.target_framerate); // Attempt to refresh at starting FPS
-      p.system = new ParticleSystem(p.createVector(p.windowWidth, p.windowHeight + 200));
+      p.system = new ParticleSystem(p.createVector(p.width, p.height + 200));
     };
 
     p.draw = () => {
