@@ -7,6 +7,8 @@ export interface TeamMember {
   firstname: string;
   surname: string;
   role: string;
+  description: string;
+  avatar: string;
 }
 
 @Injectable({
@@ -19,6 +21,6 @@ export class TeamService {
   constructor(private http: HttpClient) { }
 
   public getTeam() {
-    return this.http.get<TeamMember>(this.configUrl);
+    return this.http.get<TeamMember[]>(this.configUrl);
   }
 }

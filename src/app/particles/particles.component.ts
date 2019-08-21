@@ -1,4 +1,3 @@
-
 import { Component, OnInit, Input, Output, ElementRef, ViewChild, Renderer, OnDestroy, AfterViewInit } from '@angular/core';
 import * as p5 from 'p5';
 import * as p5dom from 'p5/lib/addons/p5.dom';

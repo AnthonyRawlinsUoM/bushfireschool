@@ -20,6 +20,10 @@ import { ContactComponent } from './footer/contact/contact.component';
 import { ParticlesComponent } from './particles/particles.component';
 import { routerTransition } from './router.animations';
 import { OpportunitiesComponent } from './opportunities/opportunities.component';
+import { RiskModellingComponent } from './risk-modelling/risk-modelling.component';
+import { SoftwareComponent } from './software/software.component';
+import { LandscapeFlammabilityComponent } from './landscape-flammability/landscape-flammability.component';
+import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { OpportunitiesComponent } from './opportunities/opportunities.component'
     ContactComponent,
     TeamMemberComponent,
     ParticlesComponent,
-    OpportunitiesComponent
+    OpportunitiesComponent,
+    RiskModellingComponent,
+    SoftwareComponent,
+    LandscapeFlammabilityComponent,
+    FireBehaviourComponent
   ],
   imports: [
     BrowserModule,

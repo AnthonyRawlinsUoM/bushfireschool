@@ -6,37 +6,70 @@
       <h1 class="ui inverted special-bold header">
         Bushfire Behaviour &amp; Management
       </h1>
-      <h2 class="special-bold">Strapline goes here</h2>
-      <div class="ui huge primary button">Action <i class="right arrow icon"></i></div>
+      <h2 class="special-bold">From Laboratory to Landscape</h2>
+      <div class="ui huge black button">Find out more <i class="right arrow icon"></i></div>
     </div>
   </div>
 </div>
 
 <div class="ui vertical stripe segment">
-  <div class="ui middle aligned stackable grid container">
-    <div class="row">
-      <div class="eight wide column">
-        <h3 class="ui header">We Help Companies and Companions</h3>
-        <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-        <h3 class="ui header">We Make Bananas That Can Dance</h3>
-        <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-      </div>
-      <div class="six wide right floated column">
-        <img
-            src="assets/images/wireframe/white-image.png"
-            class="ui large bordered rounded image"
-        >
-      </div>
+    <div class="ui top aligned stackable three column divided very relaxed grid container">
+        <div class="ui column"><p>Wildfires (commonly termed bushfires in Australia) have been a part of the Australian environment for millions of years and have shaped the species and ecosystems we see today. Most systems require fire to maintain diversity and function and have evolved with the fire regimes they experience.</p>
+            </div>
+
+            <div class="ui column">
+                <p>Wildfires can also result in significant losses to human values such as loss of people and property, infrastructure and agricultural production. The International Disaster Database estimates the total losses by wildfires globally since 1900 to exceed USD$77 billion.* </p>
+                <p class="footnote">* This value is likely to be largely an underestimate, as it is based on reported losses only. The actual value is expected to be considerably higher.</p>
+            </div>
+
+            <div class="ui column">
+                <p>Humans have attempted to manage fire through indigenous burning practices and contemporary fire management strategies such as fuel treatment, fire suppression and fuel manipulation. </p>
+            </div>
     </div>
-    <div class="row">
-      <div class="center aligned column">
-        <a class="ui huge button">Check Them Out</a>
-      </div>
+</div>
+
+<div class="ui vertical inverted uomblue stripe segment">
+    <div class="ui container grid">
+        <div class="ui six wide column">
+            <p>There has been increasing public scrutiny over how agencies allocate fire management budgets and many agencies are looking to use quantitative risk-based approaches to make decisions about expenditure in a more transparent manner.</p>
+        </div>
+        <div class="ui two wide column"></div>
+        <div class="ui eight wide column"><p>Our team aims to improve a strong scientific basis for the prediction of wildfire behaviour and the impact of wildfires in order to identify management strategies that reduce the risk of damage to human values while maintaining environmental values in the landscape. To do this our work covers three primary research areas:</p>
+            </div>
     </div>
+</div>
+
+<div class="ui vertical stripe segment">
+  <div class="ui top aligned stackable three column divided grid very relaxed container">
+    <div class="ui column">
+        <h2 class="ui header">Fire Behaviour</h2>
+        <p><img
+            src="https://via.placeholder.com/350x200?text=FireBehaviour"
+            class="ui fluid bordered rounded image"
+        ></p>
+        <app-fire-behaviour></app-fire-behaviour>
+      </div>
+
+      <div class="ui column">
+          <h2 class="ui header">Risk Modelling</h2>
+          <p><img
+              src="https://via.placeholder.com/350x200?text=RiskModelling"
+              class="ui fluid bordered rounded image"
+          ></p>
+          <app-risk-modelling></app-risk-modelling>
+        </div>
+        <div class="ui column">
+            <h2 class="ui header">Landscape Flammability</h2>
+            <p><img
+                src="https://via.placeholder.com/350x200?text=LandscapeFlammability"
+                class="ui fluid bordered rounded image"
+            ></p>
+            <app-landscape-flammability></app-landscape-flammability>
+          </div>
   </div>
 </div>
 
-<div class="ui vertical stripe quote segment">
+<!-- <div class="ui vertical stripe quote segment">
   <div class="ui equal width stackable internally celled grid">
     <div class="center aligned row">
       <div class="column">
@@ -54,18 +87,15 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="ui vertical stripe segment">
   <div class="ui text container">
-    <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-    <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
+    <h3 class="ui header">Featured Article</h3>
+    <p></p>
     <a class="ui large button">Read More</a>
     <h4 class="ui horizontal header divider">
-      <a href="#">Case Studies</a>
+      <a routerLink="/news">News</a>
     </h4>
-    <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-    <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-    <a class="ui large button">I'm Still Quite Interested</a>
   </div>
 </div>

@@ -13,7 +13,10 @@ padding:0;
     right: 0;
     z-index:200;
 }
-
+p.footnote {
+    color: #333;
+    font-size: 0.7rem !important;
+}
 .masthead .logo.item img {
   margin-right: 1em;
 }
@@ -31,9 +34,11 @@ padding:0;
   font-weight: normal;
 }
 
-
+.ui.vertical.inverted.uomblue.stripe {
+    background-color: rgb(0,64,130);
+}
 .ui.vertical.stripe {
-  padding: 8em 0em;
+  padding: 4em 0em;
 }
 .ui.vertical.stripe h3 {
   font-size: 2em;
@@ -68,9 +73,9 @@ padding:0;
     padding: 3em auto;
     text-align: center;
 } */
-/* 
+/*
 .ui.masthead .ui.inverted.header {
     padding-top: 2em;
     text-align: center;
-    
+
 } */

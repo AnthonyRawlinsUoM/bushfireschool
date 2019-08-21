@@ -12,9 +12,9 @@ export class TeamComponent implements OnInit {
   constructor(private teamservice: TeamService) { }
 
   ngOnInit() {
-    this.teamservice.getTeam().subscribe((data: TeamMember) => {
+    this.teamservice.getTeam().subscribe((data: TeamMember[]) => {
       console.log(data);
-      this.team.push(data);
+      this.team = data;
     }
       //  this.team = {
       //   title = data['title'];

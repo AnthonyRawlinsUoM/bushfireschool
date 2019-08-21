@@ -1,68 +1,79 @@
 [{
-      "title": "Dr",
-      "role": "Associate Professor",
-      "firstname": "Trent",
-      "surname": "Penman"
-    },
-    {
-      "title": "Dr",
-      "role": "Research Fellow",
-      "firstname": "Jane",
-      "surname": "Cawson"
-    },
-    {
-      "title": "Dr",
-      "role": "Research Fellow",
-      "firstname": "Thomas",
-      "surname": "Duff"
-    },
-
-    {
-      "title": "",
-      "role": "Research Assistant",
-      "firstname": "Bianca",
-      "surname": "Tumino"
-    },
-    {
-      "title": "",
-      "role": "PhD Student",
-      "firstname": "Sarah",
-      "surname": "McColl-Gausden"
-    },
-    {
-      "title": "",
-      "role": "PhD Student",
-      "firstname": "Geofe",
-      "surname": "Cadiz"
-    },
-    {
-      "title": "",
-      "role": "Software Developer",
-      "firstname": "Dan",
-      "surname": "Ababei"
-    },
-    {
-      "title": "Dr",
-      "role": "Research Fellow",
-      "firstname": "Alex",
-      "surname": "Filkov"
-    },
-    {
-      "title": "",
-      "role": "Software Developer",
-      "firstname": "Denis",
-      "surname": "Kultae"
-    },
-    {
-      "title": "",
-      "role": "Research Fellow",
-      "firstname": "Anthony",
-      "surname": "Rawlins"
-    },
-    {
-      "title": "",
-      "role": "Research Assistant",
-      "firstname": "Brett",
-      "surname": "Cirulis"
-    }
-  ]
+    "title": "Dr",
+    "role": "Associate Professor",
+    "firstname": "Trent",
+    "surname": "Penman",
+    "description": "Trent is a bushfire risk modeller interested in all aspects of bushfire management. His work covers a range of theoretical and applied aspects of bushfire behaviour and management. The main focus of his research is optimising management expenditure to reduce the risk of detrimental fire impacts on people, property and the environment. Trent' s early research was in conservation biology focusing on amphibians.During his PhD, he worked with Forests NSW and learnt the applied fundamentals of forest and fire management.His post - doctoral research began with fire ecology and shifted to focusing on trade - offs between human and natural assets. Over the last ten years, his research has combined fire simulation with risk research methodologies such as Bayesian Networks.The novel approach to fire management has allowed for the analysis of landscape fire risk to multiple asset types(environmental, economic, social, cultural) over days, seasons and decades.Trent is currently leading a project that will develop a fire regime simulation tool to address this question for both managers and researchers. Trent' s teaches undergraduate and masters level subjects.He is currently co - ordinating Patterns and Processes of Landscape Fire(FRST90025), Bushfire Planning and Management(FRST90017) and Spatial Tools for Ecosystem Sciences(ENST90045), and co - coordinates Fire in the Australian Landscape(FRST30002), and Building Behaviour in Bushfires(EVSC90023).Trent teaches into a range of other courses including Human / Non Human Encounters and Contested Resources. Supervision is an important component of any academic.Trent supervises a range of research students from laboratory studies of fire fundamentals, field based research projects on fire and fire ecology and computer based studies including remote sensing, fire behaviour simulation and species distribution modelling."
+}, {
+    "title": "Dr",
+    "role": "Research Fellow",
+    "firstname": "Jane",
+    "surname": "Cawson",
+    "description": "Jane is a forest scientist whose research is about understanding flammability in Australian vegetation. She has been investigating fuel dynamics following forest disturbances and relations between moisture and ignitability. She has conducted research to evaluate and improve fuel management strategies (e.g. planned burning and mechanical treatments). Jane trained as a forest scientist and worked in fire management within the Victorian government for five years before becoming a researcher. She has over 10 years research experience and has published more than 15 peer-reviewed papers about fire in Australian vegetation. She is motivated to produce research that contributes to improved fire management to benefit people and the environment."
+}, {
+    "title": "Dr",
+    "role": "Research Fellow",
+    "firstname": "Kate",
+    "surname": "Parkins",
+    "description": "Kate is fire ecologist, currently undertaking post-doctoral research as a bushfire risk analyst with the Fire Behaviour and Management Group. Her current research interests include fire risk modelling, particularly the integration of cultural and environmental assets into risk planning, fire management and forest ecology. Kate completed her PhD in Fire Ecology at the University of Melbourne in 2018. Her research focused on how fire affects ecological processes in flammable systems, with a focus on fire - induced edge effects and the implications for native fauna.Her Masters research focused on large forest owls, threatened species conservation and species distribution modelling.Kate also has a degree in communications(Acting, TV & Film production) and is passionate about science communication. "
+}, {
+    "title": "Dr",
+    "role": "Research Fellow",
+    "firstname": "Thomas",
+    "surname": "Duff",
+    "description": "Tom's work involves looking at problems involving the management of bushfires including looking at questions relating to fire behaviour, ecology and risk. Before transitioning to research, Tom trained and worked as a forester where he gained experience in the management challenges in forested landscapes including bushfires, sustainable forest products and recreation. His experience has shaped his subsequent research – he views research challenges with an eye to solving practical problems of landscape managers. He is currently involved with projects related to prescribed burning, links between weather and fire risk, and how the properties of vegetation communities influence fire behaviour. These topics allow him to work in a broad range of disciplines including operational research, ‘big' data analysis, ecology, meteorology, remote sensing and management science."
+}, {
+    "title": "",
+    "role": "Research Assistant",
+    "firstname": "Bianca",
+    "surname": "Tumino",
+    "description": "Bianca completed the Bachelor of Science (Honours) in 2017 with a focus on plant flammability. Since then, she has been working as a research assistant in the Fire Behaviour and Management group to support changes to the PHOENIX RapidFire bushfire characterisation model. In particular, the validation of the state's fuel inputs and the improvement of the house loss prediction algorithms. Bianca is passionate about the improvement of fire management for the protection of the natural environment and the community. "
+}, {
+    "title": "",
+    "role": "PhD Student",
+    "firstname": "Sarah",
+    "surname": "McColl-Gausden",
+    "description": "Sarah completed her Masters of Science (Ecosystem Science) in the Bushfire Behaviour and Management group in 2017. She used an ecological flammability model to examine how past fire shapes future fire risk. Sarah has now begun her PhD examining whether fire management could be used to maintain biodiversity in a changing climate. She is particularly interested in teasing apart some of the complex relationships between biodiversity, climate and fire. Her project will bring together field experiments and simulation modelling in a decision science framework."
+}, {
+    "title": "",
+    "role": "PhD Student",
+    "firstname": "Geofe",
+    "surname": "Cadiz",
+    "description": ""
+}, {
+    "title": "",
+    "role": "Academic Specialist",
+    "firstname": "Dan",
+    "surname": "Ababei",
+    "description": "Dan Ababei is a software developer who has been writing scientific software tools used across diverse fields such as fire regime simulations, probabilistic dependence modelling (especially Bayesian networks, also vine-copulas), risk analysis, structured expert judgement, stratigraphic correlation. Some of the fields where Dan's software frameworks are being or have been used are aviation, stratigraphy, food safety, oil processing plant safety, flood defence, volcanology, climate change (anthropogenic and orbitally forced), infrastructure and wildfire modelling. He is the owner of a small software firm named LightTwist Software and will sometimes teach various people C++, C# and software architecture. Dan' s mission at the University of Melbourne is to build a flexible modular platform for fire regime simulations, which brings together replaceable subsystems modelling fire propagation, ignitions, fuel / vegetation, weather(historical or simulated, e.g.by climate change models), planned burns, suppression, disruption, elevation, infrastructure, risk metrics, etc for simulations spanning decades to centuries. "
+}, {
+    "title": "Dr",
+    "role": "Research Fellow",
+    "firstname": "Alex",
+    "surname": "Filkov",
+    "description": ""
+}, {
+    "title": "",
+    "role": "Academic Specialist",
+    "firstname": "Denis",
+    "surname": "Kultae",
+    "description": ""
+}, {
+    "title": "",
+    "role": "Academic Specialist",
+    "firstname": "Anthony",
+    "surname": "Rawlins",
+    "description": "Anthony Rawlins is a full stack web developer and programmer of scientific software. Bringing a wealth of graphic design and information technology experience, Anthony relishes the opportunity to apply design methodology and aesthetic sensibility to complex visualisation problems on the web and desktop. Anthony processes Big Data for the production of spatial datasets and information products. He also enjoys building agent based machine learning models."
+}, {
+    "title": "",
+    "role": "Statistical Programmer",
+    "firstname": "Brett",
+    "surname": "Cirulis",
+    "description": "Brett Cirulis completed the Masters of Forest and Ecosystem Science in 2013. Since then he has worked under various roles within the group. He has strong interests in fire simulations, spatial data science and remote sensing technology. The focus of Brett's work up until 2016 was related to the research and development of the PHOENIX RapidFire bushfire characterisation model, in particular, the improvement of the fuel inputs through the development of a state-wide fuel classification modelSince 2016 his work has been focused simulation based risk analysis and the application of UAV's for bushfire research. He is motivated to complete research that improves the management of bushfire in the Australian landscape. "
+}, {
+    "title": "",
+    "role": "Research Assistant",
+    "firstname": "Jamie",
+    "surname": "Burton",
+    "description": "Jamie finished her Masters of Forest Ecosystem Science at the University of Melbourne in 2018. Her Masters project explored how canopy species change and time since fire influences fine fuel availability in Mountain Ash forests. Jamie has also worked in the private plantation industry as a Resource Forester and more recently as a Research Assistant working on dead wood dynamics in Victorian temperate forests. Jamie began her PhD in 2019. As part of her studies, Jamie will explore how plant species (and their traits) influence litter properties and litter flammability. She is particularly interested in how litter properties change over different spatial and temporal scales, and what the implications are for flammability. Her work will combine vegetation assessments with laboratory and in-situ flammability experiments."
+}]
