@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import {BreadcrumbsModule} from "ng6-breadcrumbs";
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -25,6 +26,9 @@ import { RiskModellingComponent } from './risk-modelling/risk-modelling.componen
 import { SoftwareComponent } from './software/software.component';
 import { LandscapeFlammabilityComponent } from './landscape-flammability/landscape-flammability.component';
 import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.component';
+import { ParallaxDirective } from './parallax.directive';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +49,10 @@ import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.componen
     RiskModellingComponent,
     SoftwareComponent,
     LandscapeFlammabilityComponent,
-    FireBehaviourComponent
+    FireBehaviourComponent,
+    ParallaxDirective,
+    BreadcrumbsComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +61,8 @@ import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.componen
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxTwitterTimelineModule
+    NgxTwitterTimelineModule,
+    BreadcrumbsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,6 @@
+.masthead {
+    min-height: 400px;
+    width: 100%;
+    z-index:200;
+    position: relative;
+}

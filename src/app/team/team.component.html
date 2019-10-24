@@ -1,7 +1,8 @@
-<div class="ui vertical stripe segment">
+<app-breadcrumbs></app-breadcrumbs>
+<div class="ui vertical stripe attached segment">
   <div class="ui container">
-    <h2 class="ui top attached inverted blue segment header">Meet the Team </h2>
-    <div class="ui container cellgrid segment">
+    <h2 class="ui top attached segment header">Meet the Team </h2>
+    <div class="ui attached cellgrid segment">
       <app-team-member *ngFor="let t of team" [teammember]="t"></app-team-member>
     </div>
   </div>

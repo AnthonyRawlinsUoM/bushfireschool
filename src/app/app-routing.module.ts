@@ -14,23 +14,25 @@ import { SoftwareComponent } from './software/software.component';
 
 import { LandscapeFlammabilityComponent } from './landscape-flammability/landscape-flammability.component';
 import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.component';
+import { OpportunitiesComponent } from './opportunities/opportunities.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent, data: { state: 'home' } },
-    { path: 'team', component: TeamComponent, data: { state: 'team' } },
-    { path: 'projects', component: ProjectsComponent, data: { state: 'projects' } },
-    { path: 'research', component: ResearchComponent, data: { state: 'research' } },
+    { path: 'home', component: HomeComponent, data: { state: 'home', breadcrumb: 'home' } },
+    { path: 'team', component: TeamComponent, data: { state: 'team', breadcrumb: 'team' } },
+    { path: 'projects', component: ProjectsComponent, data: { state: 'projects', breadcrumb: 'projects' } },
+    { path: 'research', component: ResearchComponent, data: { state: 'research', breadcrumb: 'research' } },
 
-    { path: 'software', component: SoftwareComponent, data: { state: 'software' } },
+    { path: 'software', component: SoftwareComponent, data: { state: 'software', breadcrumb: 'software' } },
+    { path: 'opportunities', component: OpportunitiesComponent, data: { state: 'opportunities', breadcrumb: 'opportunities' } },
 
-    { path: 'coursework', component: CourseworkComponent, data: { state: 'coursework' } },
+    { path: 'coursework', component: CourseworkComponent, data: { state: 'coursework', breadcrumb: 'coursework' } },
 
-    { path: 'behaviour', component: FireBehaviourComponent, data: { state: 'behaviour' } },
-    { path: 'flammability', component: LandscapeFlammabilityComponent, data: { state: 'flammability' } },
-    { path: 'risk', component: RiskModellingComponent, data: { state: 'risk' } },
+    { path: 'behaviour', component: FireBehaviourComponent, data: { state: 'behaviour', breadcrumb: 'behaviour' } },
+    { path: 'flammability', component: LandscapeFlammabilityComponent, data: { state: 'flammability', breadcrumb: 'flammability' } },
+    { path: 'risk', component: RiskModellingComponent, data: { state: 'risk', breadcrumb: 'risk' } },
 
 
-    { path: 'news', component: NewsComponent, data: { state: 'news' } },
+    { path: 'news', component: NewsComponent, data: { state: 'news', breadcrumb: 'news' } },
     {
         path: '',
         redirectTo: '/home',
