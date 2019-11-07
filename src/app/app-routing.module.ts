@@ -36,13 +36,19 @@ export const routes: Routes = [
     { path: 'risk', component: RiskModellingComponent, data: { state: 'risk', breadcrumb: 'risk' } },
 
     {
-      path: 'profile',
-      component: ProfileComponent, data: { state: 'profile', breadcrumb: 'profile' } },
+        path: 'profile',
+        component: ProfileComponent, data: { state: 'profile', breadcrumb: 'profile' }
+    },
 
     { path: 'news', component: NewsComponent, data: { state: 'news', breadcrumb: 'news' } },
 
-    { path: 'ena', component: EnaComponent, data: { state: 'ena', breadcrumb: 'ena' },
-    canActivate: [AuthGuard]},
+    {
+        path: 'ena',
+        component: EnaComponent,
+        data: { state: 'ena', breadcrumb: 'ena' },
+        canActivate: [AuthGuard]
+    },
+
     {
         path: '',
         redirectTo: '/home',
