@@ -10,8 +10,6 @@ var jwks = require('jwks-rsa');
 const app = express();
 
 
-app.use(express.static(path.join(__dirname, '/dist/site')));
-
 app.use(function (req, res, next) {
   app.use(function (req, res, next) {
 
@@ -34,6 +32,8 @@ app.use(function (req, res, next) {
   next();
 });
 
+
+app.use(express.static(path.join(__dirname, '/dist/site')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/dist/site/index.html'))
 });

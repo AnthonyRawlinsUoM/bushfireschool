@@ -32,6 +32,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EnaComponent } from './ena/ena.component';
 import { ExternalApiComponent } from './external-api/external-api.component';
+import { CallbackComponent } from './callback/callback.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { ExternalApiComponent } from './external-api/external-api.component';
     CoursesComponent,
     ProfileComponent,
     EnaComponent,
-    ExternalApiComponent
+    ExternalApiComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
