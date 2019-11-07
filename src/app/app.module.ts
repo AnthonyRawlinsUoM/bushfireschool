@@ -31,6 +31,7 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { CoursesComponent } from './courses/courses.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EnaComponent } from './ena/ena.component';
+import { ExternalApiComponent } from './external-api/external-api.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { EnaComponent } from './ena/ena.component';
     BreadcrumbsComponent,
     CoursesComponent,
     ProfileComponent,
-    EnaComponent
+    EnaComponent,
+    ExternalApiComponent
   ],
   imports: [
     BrowserModule,

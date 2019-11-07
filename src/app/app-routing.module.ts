@@ -18,7 +18,12 @@ import { LandscapeFlammabilityComponent } from './landscape-flammability/landsca
 import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.component';
 import { OpportunitiesComponent } from './opportunities/opportunities.component';
 
+import { ExternalApiComponent } from './external-api/external-api.component';
+
 import { AuthGuard } from './auth.guard';
+
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorService } from './interceptor.service';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent, data: { state: 'home', breadcrumb: 'home' } },
@@ -48,6 +53,11 @@ export const routes: Routes = [
         data: { state: 'ena', breadcrumb: 'ena' },
         canActivate: [AuthGuard]
     },
+    {
+        path: 'external-api',
+        component: ExternalApiComponent,
+        canActivate: [AuthGuard]
+    },
 
     {
         path: '',
@@ -61,6 +71,13 @@ export const routes: Routes = [
     imports: [RouterModule.forRoot(routes, {
         useHash: false
     })],
+    providers: [
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: InterceptorService,
+            multi: true
+        }
+    ],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }

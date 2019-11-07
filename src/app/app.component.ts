@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     this.auth.localAuthSetup();
     this.auth.handleAuthCallback();
   }
-  
+
   getState(outlet) {
     return outlet.activatedRouteData.state;
   }
