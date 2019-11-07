@@ -8,6 +8,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ResearchComponent } from './research/research.component';
 import { CourseworkComponent } from './coursework/coursework.component';
 import { ContactComponent } from './footer/contact/contact.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EnaComponent } from './ena/ena.component';
 
 import { RiskModellingComponent } from './risk-modelling/risk-modelling.component';
 import { SoftwareComponent } from './software/software.component';
@@ -15,6 +17,8 @@ import { SoftwareComponent } from './software/software.component';
 import { LandscapeFlammabilityComponent } from './landscape-flammability/landscape-flammability.component';
 import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.component';
 import { OpportunitiesComponent } from './opportunities/opportunities.component';
+
+import { AuthGuard } from './auth.guard';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent, data: { state: 'home', breadcrumb: 'home' } },
@@ -31,8 +35,14 @@ export const routes: Routes = [
     { path: 'flammability', component: LandscapeFlammabilityComponent, data: { state: 'flammability', breadcrumb: 'flammability' } },
     { path: 'risk', component: RiskModellingComponent, data: { state: 'risk', breadcrumb: 'risk' } },
 
+    {
+      path: 'profile',
+      component: ProfileComponent, data: { state: 'profile', breadcrumb: 'profile' } },
 
     { path: 'news', component: NewsComponent, data: { state: 'news', breadcrumb: 'news' } },
+
+    { path: 'ena', component: EnaComponent, data: { state: 'ena', breadcrumb: 'ena' },
+    canActivate: [AuthGuard]},
     {
         path: '',
         redirectTo: '/home',

@@ -29,6 +29,8 @@ import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.componen
 import { ParallaxDirective } from './parallax.directive';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { CoursesComponent } from './courses/courses.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EnaComponent } from './ena/ena.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { CoursesComponent } from './courses/courses.component';
     FireBehaviourComponent,
     ParallaxDirective,
     BreadcrumbsComponent,
-    CoursesComponent
+    CoursesComponent,
+    ProfileComponent,
+    EnaComponent
   ],
   imports: [
     BrowserModule,
