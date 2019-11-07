@@ -12,6 +12,8 @@ export class PrimaryNavigationComponent implements OnInit {
   constructor(public auth: AuthService) { }
 
   ngOnInit() {
+    this.auth.localAuthSetup();
+    this.auth.handleAuthCallback();
   }
 
 }
