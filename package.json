@@ -1,6 +1,6 @@
 {
   "name": "site",
-  "version": "0.0.10",
+  "version": "0.0.9",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prod": "node app.js"
+    "app": "node app.js",
+    "jwt": "node protected.js",
+    "prod": "npm-run-all app jwt"
   },
   "private": true,
   "dependencies": {
