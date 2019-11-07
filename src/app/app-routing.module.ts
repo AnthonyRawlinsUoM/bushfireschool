@@ -10,6 +10,8 @@ import { CourseworkComponent } from './coursework/coursework.component';
 import { ContactComponent } from './footer/contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EnaComponent } from './ena/ena.component';
+import { CallbackComponent } from './callback/callback.component';
+
 
 import { RiskModellingComponent } from './risk-modelling/risk-modelling.component';
 import { SoftwareComponent } from './software/software.component';
@@ -44,14 +46,17 @@ export const routes: Routes = [
         path: 'profile',
         component: ProfileComponent, data: { state: 'profile', breadcrumb: 'profile' }
     },
+    {
+        path: 'callback',
+        component: CallbackComponent, data: { state: 'callback', breadcrumb: 'callback' }
+    },
 
     { path: 'news', component: NewsComponent, data: { state: 'news', breadcrumb: 'news' } },
 
     {
         path: 'ena',
         component: EnaComponent,
-        data: { state: 'ena', breadcrumb: 'ena' },
-        canActivate: [AuthGuard]
+        data: { state: 'ena', breadcrumb: 'ena' }
     },
     {
         path: 'external-api',
