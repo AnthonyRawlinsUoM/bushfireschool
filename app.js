@@ -4,11 +4,32 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-var jwt = require('express-jwt');
-var jwks = require('jwks-rsa');
+const jwt = require("express-jwt");
+const jwksRsa = require("jwks-rsa");
 
+// Create a new Express app
 const app = express();
 
+// Set up Auth0 configuration
+const authConfig = {
+  domain: "bnhcrclfmc.au.auth0.com",
+  audience: "https://www.bushfire.school/protected"
+};
+
+// Define middleware that validates incoming bearer tokens
+// using JWKS from bnhcrclfmc.au.auth0.com
+const checkJwt = jwt({
+  secret: jwksRsa.expressJwtSecret({
+    cache: true,
+    rateLimit: true,
+    jwksRequestsPerMinute: 5,
+    jwksUri: `https://${authConfig.domain}/.well-known/jwks.json`
+  }),
+
+  audience: authConfig.audience,
+  issuer: `https://${authConfig.domain}/`,
+  algorithm: ["RS256"]
+});
 
 app.use(function (req, res, next) {
   app.use(function (req, res, next) {
@@ -32,8 +53,13 @@ app.use(function (req, res, next) {
   next();
 });
 
-
 app.use(express.static(path.join(__dirname, '/dist/site')));
+
+// Define an endpoint that must be called with an access token
+app.get("/ena.html", checkJwt, (req, res) => {
+  res.sendFile(path.join(__dirname, '/dist/site/assets/ena.html'))
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/dist/site/index.html'))
 });
