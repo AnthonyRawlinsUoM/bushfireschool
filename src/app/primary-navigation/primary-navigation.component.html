@@ -28,8 +28,8 @@
           <a class="ui item" routerLinkActive="active" routerLink="/news">News</a>
           <div class="right menu">
               <a class="ui icon item" routerLinkActive="active" routerLink="profile" *ngIf="auth.loggedIn"><i class="ui user icon"></i>Profile</a>
-              <a class="ui icon item" (click)="auth.login()" *ngIf="!auth.loggedIn"><i class="ui entry icon"></i> Log In</a>
-              <a class="ui icon item" (click)="auth.logout()" *ngIf="auth.loggedIn"><i class="ui exit icon"></i> Log Out</a>
+              <a class="ui icon item" (click)="auth.login('https://www.bushfires.school/home')" *ngIf="!auth.loggedIn"><i class="ui entry icon"></i> Log In</a>
+              <a class="ui icon item" (click)="auth.logout('https://www.bushfires.school/home')" *ngIf="auth.loggedIn"><i class="ui exit icon"></i> Log Out</a>
 
               <!-- <a class="ui item" routerLink="external-api" *ngIf="auth.loggedIn">External API</a> -->
           </div>
