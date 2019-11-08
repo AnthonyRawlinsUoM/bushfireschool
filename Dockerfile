@@ -19,6 +19,7 @@ RUN npm install
 
 # add app
 COPY ./build/site /app
+COPY ./*.json /app
 
 # start app
 CMD npm run prod
