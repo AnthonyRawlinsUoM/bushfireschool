@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routes } from '../app-routing.module';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-primary-navigation',
@@ -8,7 +9,7 @@ import { routes } from '../app-routing.module';
 })
 export class PrimaryNavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public auth: AuthService) { }
 
   ngOnInit() {
   }

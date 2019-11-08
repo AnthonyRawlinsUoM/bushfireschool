@@ -21,7 +21,8 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/ena.html",
             ],
             "styles": [
               "src/styles.css"
@@ -62,7 +63,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "site:build"
+            "browserTarget": "site:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
