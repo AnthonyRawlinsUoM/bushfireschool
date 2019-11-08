@@ -13,12 +13,12 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
-RUN npm install -g @angular/cli
+# RUN npm install -g @angular/cli
 COPY package.json /app/package.json
 RUN npm install
 
 # add app
-COPY . /app
+COPY ./build/site /app
 
 # start app
 CMD npm run prod
