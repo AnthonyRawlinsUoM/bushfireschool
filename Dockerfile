@@ -18,8 +18,9 @@ COPY package.json /app/package.json
 RUN npm install
 
 # add app
-COPY ./build/site /app
+COPY ./dist/site/* /app
 COPY ./*.json /app
+COPY ./*.js /app
 
 # start app
 CMD npm run prod
