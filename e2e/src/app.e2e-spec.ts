@@ -1,23 +1,3 @@
-import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
-
-describe('workspace-project App', () => {
-  let page: AppPage;
-
-  beforeEach(() => {
-    page = new AppPage();
-  });
-
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to site!');
-  });
-
-  afterEach(async () => {
-    // Assert that there are no errors emitted from the browser
-    const logs = await browser.manage().logs().get(logging.Type.BROWSER);
-    expect(logs).not.toContain(jasmine.objectContaining({
-      level: logging.Level.SEVERE,
-    } as logging.Entry));
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7b5da514619832e38e64c03a7abe3d96dc0eb1f5f058ee54701cab921420f02
+size 633

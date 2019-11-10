@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { SoftwareComponent } from './software.component';
-
-describe('SoftwareComponent', () => {
-  let component: SoftwareComponent;
-  let fixture: ComponentFixture<SoftwareComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ SoftwareComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(SoftwareComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b6daba49d8d5d1a3effd1ce395282eadb7471d65b2dc38d37891a52638e3121
+size 642

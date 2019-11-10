@@ -1,20 +1,3 @@
-import { Directive, Input, ElementRef, HostListener } from '@angular/core';
-
-@Directive({
-  selector: '[appParallax]'
-})
-export class ParallaxDirective {
-
-  @Input('ratio') parallaxRatio : number = 1
-  initialTop : number = 0
-
-  constructor(private eleRef : ElementRef) {
-    this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top
-  }
-
-  @HostListener("window:scroll", ["$event"])
-  onWindowScroll(event){
-    this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3914ba28204f2999a1a296ba90801382caf61d2b59d680d66a686be726fc42aa
+size 537

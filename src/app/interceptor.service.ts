@@ -1,33 +1,3 @@
-import { Injectable } from '@angular/core';
-import {
-  HttpRequest,
-  HttpHandler,
-  HttpEvent,
-  HttpInterceptor
-} from '@angular/common/http';
-import { AuthService } from './auth.service';
-import { Observable, throwError } from 'rxjs';
-import { mergeMap, catchError } from 'rxjs/operators';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class InterceptorService implements HttpInterceptor {
-
-  constructor(private auth: AuthService) { }
-
-  intercept(
-    req: HttpRequest<any>,
-    next: HttpHandler
-  ): Observable<HttpEvent<any>> {
-    return this.auth.getTokenSilently$().pipe(
-      mergeMap(token => {
-        const tokenReq = req.clone({
-          setHeaders: { Authorization: `Bearer ${token}` }
-        });
-        return next.handle(tokenReq);
-      }),
-      catchError(err => throwError(err))
-    );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:32b3653742c30b4a008f80f32a85b6133491d447fd16f246f8cd7e9fbe7f3c04
+size 819

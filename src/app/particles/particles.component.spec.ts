@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { ParticlesComponent } from './particles.component';
-
-describe('ParticlesComponent', () => {
-  let component: ParticlesComponent;
-  let fixture: ComponentFixture<ParticlesComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ParticlesComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ParticlesComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:70380843873e84d7addb43f77cfdb71927e1437f620f04f8816ea2453847c28e
+size 649

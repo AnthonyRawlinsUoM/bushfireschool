@@ -1,12 +1,3 @@
-import { TestBed } from '@angular/core/testing';
-
-import { AuthService } from './auth.service';
-
-describe('AuthService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
-
-  it('should be created', () => {
-    const service: AuthService = TestBed.get(AuthService);
-    expect(service).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:410c74985457dfb545f748b75f2bfaead6c5e8dd3bbd8b9a468866d6ba43708c
+size 323

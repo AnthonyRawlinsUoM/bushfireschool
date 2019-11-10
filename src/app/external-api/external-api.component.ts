@@ -1,23 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
-
-@Component({
-  selector: 'app-external-api',
-  templateUrl: './external-api.component.html',
-  styleUrls: ['./external-api.component.css']
-})
-export class ExternalApiComponent implements OnInit {
-  responseJson: string;
-
-  constructor(private api: ApiService) { }
-
-  ngOnInit() {
-  }
-
-  pingApi() {
-    this.api.ping$().subscribe(
-      res => this.responseJson = res
-    );
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ad29c8ddafc799b193572e75f2a129e5f87450f1d65dc572b72ac5484ed243f
+size 479

@@ -1,26 +1,3 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
-
-export interface TeamMember {
-  title: string;
-  firstname: string;
-  surname: string;
-  role: string;
-  description: string;
-  avatar: string;
-}
-
-@Injectable({
-  providedIn: 'root'
-})
-export class TeamService {
-
-  configUrl = 'assets/team.json';
-
-  constructor(private http: HttpClient) { }
-
-  public getTeam() {
-    return this.http.get<TeamMember[]>(this.configUrl);
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:47454f67ba5b44d1a9a9838757037ce4cd866d01bc2c3c9e5dfd1356232ee2c1
+size 473

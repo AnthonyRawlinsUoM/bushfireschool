@@ -1,25 +1,3 @@
-import { Component, NgModule, EventEmitter, OnInit } from '@angular/core';
-import { routerTransition } from './router.animations';
-import { AuthService } from './auth.service';
-
-@Component({
-  selector: 'app-root',
-  animations: [routerTransition],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent implements OnInit {
-  title = 'site';
-
-  constructor(private auth: AuthService) {}
-
-
-  ngOnInit() {
-    this.auth.localAuthSetup();
-    this.auth.handleAuthCallback();
-  }
-
-  getState(outlet) {
-    return outlet.activatedRouteData.state;
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b39db34b7a6df6a65ef8eb5a76a0da127f6cde5623670761bc1fdbd5853e2302
+size 598

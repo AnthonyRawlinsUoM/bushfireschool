@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { FireBehaviourComponent } from './fire-behaviour.component';
-
-describe('FireBehaviourComponent', () => {
-  let component: FireBehaviourComponent;
-  let fixture: ComponentFixture<FireBehaviourComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ FireBehaviourComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(FireBehaviourComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:a98dddc5ac4ddeb70b2c226f16419ce9b138fd70fc20b5ce51698d5533c48ecb
+size 678

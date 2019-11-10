@@ -1,15 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-news',
-  templateUrl: './news.component.html',
-  styleUrls: ['./news.component.css']
-})
-export class NewsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f34728a04ddde468070859ae8921611b87b923b3c11eb244252030bc0bf70306
+size 261

@@ -1,15 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-software',
-  templateUrl: './software.component.html',
-  styleUrls: ['./software.component.css']
-})
-export class SoftwareComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:144fc72c12f265b39b46b0bb1c696e01dd3636ca5a309355fbb4269f29f82dc4
+size 277

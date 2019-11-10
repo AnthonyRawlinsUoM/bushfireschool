@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CoursesComponent } from './courses.component';
-
-describe('CoursesComponent', () => {
-  let component: CoursesComponent;
-  let fixture: ComponentFixture<CoursesComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ CoursesComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CoursesComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a5187ff7f827119ec2a9ba47bf157e9e5a9272ceb4ae2ed6a69be6200d84304
+size 635

@@ -1,18 +1,3 @@
-import { trigger, animate, style, group, query, transition } from '@angular/animations';
-
-export const routerTransition = trigger('routerTransition', [
-  transition('* <=> *', [
-    query(':enter, :leave', style({ position: 'fixed', width: '100%' })
-      , { optional: true }),
-    group([
-      query(':enter', [
-        style({ transform: 'translateX(100%)' }),
-        animate('0.5s ease-in-out', style({ transform: 'translateX(0%)' }))
-      ], { optional: true }),
-      query(':leave', [
-        style({ transform: 'translateX(0%)' }),
-        animate('0.5s ease-in-out', style({ transform: 'translateX(-100%)' }))
-      ], { optional: true }),
-    ])
-  ])
-])
+version https://git-lfs.github.com/spec/v1
+oid sha256:45db97a1133e6a2bebe98dfee308e824551c96e2ebfc819b9a050aa9c98fb5a4
+size 666

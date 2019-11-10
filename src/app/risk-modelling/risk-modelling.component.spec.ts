@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { RiskModellingComponent } from './risk-modelling.component';
-
-describe('RiskModellingComponent', () => {
-  let component: RiskModellingComponent;
-  let fixture: ComponentFixture<RiskModellingComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ RiskModellingComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(RiskModellingComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:664a8694730960e272ae493dbaff38a39033280b62a528d303737cf49c64dfc4
+size 678

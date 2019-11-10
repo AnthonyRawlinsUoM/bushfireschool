@@ -1,15 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-page-not-found',
-  templateUrl: './page-not-found.component.html',
-  styleUrls: ['./page-not-found.component.css']
-})
-export class PageNotFoundComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:45a37fd8178403e7be32ddb89b53072a44561a6f8fdf6d25ed767a8a49b05af2
+size 299

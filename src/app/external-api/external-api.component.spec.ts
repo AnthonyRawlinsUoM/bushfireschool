@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { ExternalApiComponent } from './external-api.component';
-
-describe('ExternalApiComponent', () => {
-  let component: ExternalApiComponent;
-  let fixture: ComponentFixture<ExternalApiComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ExternalApiComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ExternalApiComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:7c15efef0784bb4ac59d010ac713aff2445422612ba1b59eb12f58b60835f71e
+size 664

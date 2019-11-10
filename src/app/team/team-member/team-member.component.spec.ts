@@ -1,25 +1,3 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { TeamMemberComponent } from './team-member.component';
-
-describe('TeamMemberComponent', () => {
-  let component: TeamMemberComponent;
-  let fixture: ComponentFixture<TeamMemberComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ TeamMemberComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(TeamMemberComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:c51849985a2beb3390904442512bdd03c21a2481ba380c9a67e66805052d0471
+size 657
