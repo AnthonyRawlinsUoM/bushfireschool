@@ -11,19 +11,14 @@ import { ContactComponent } from './footer/contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EnaComponent } from './ena/ena.component';
 import { CallbackComponent } from './callback/callback.component';
-
-
 import { RiskModellingComponent } from './risk-modelling/risk-modelling.component';
 import { SoftwareComponent } from './software/software.component';
-
 import { LandscapeFlammabilityComponent } from './landscape-flammability/landscape-flammability.component';
 import { FireBehaviourComponent } from './fire-behaviour/fire-behaviour.component';
 import { OpportunitiesComponent } from './opportunities/opportunities.component';
-
+import { HotTopicsComponent } from './hot-topics/hot-topics.component';
 import { ExternalApiComponent } from './external-api/external-api.component';
-
 import { AuthGuard } from './auth.guard';
-
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InterceptorService } from './interceptor.service';
 
@@ -32,11 +27,11 @@ export const routes: Routes = [
     { path: 'team', component: TeamComponent, data: { state: 'team', breadcrumb: 'team' } },
     { path: 'projects', component: ProjectsComponent, data: { state: 'projects', breadcrumb: 'projects' } },
     { path: 'research', component: ResearchComponent, data: { state: 'research', breadcrumb: 'research' } },
-
+    { path: 'hot-topics', component: HotTopicsComponent, data: {state: 'hottopics', breadcrumb: 'hot topics'} },
     { path: 'software', component: SoftwareComponent, data: { state: 'software', breadcrumb: 'software' } },
-    { path: 'opportunities', component: OpportunitiesComponent, data: { state: 'opportunities', breadcrumb: 'opportunities' } },
+    // { path: 'opportunities', component: OpportunitiesComponent, data: { state: 'opportunities', breadcrumb: 'opportunities' } },
 
-    { path: 'coursework', component: CourseworkComponent, data: { state: 'coursework', breadcrumb: 'coursework' } },
+    // { path: 'coursework', component: CourseworkComponent, data: { state: 'coursework', breadcrumb: 'coursework' } },
 
     { path: 'behaviour', component: FireBehaviourComponent, data: { state: 'behaviour', breadcrumb: 'behaviour' } },
     { path: 'flammability', component: LandscapeFlammabilityComponent, data: { state: 'flammability', breadcrumb: 'flammability' } },

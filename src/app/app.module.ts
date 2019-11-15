@@ -33,6 +33,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { EnaComponent } from './ena/ena.component';
 import { ExternalApiComponent } from './external-api/external-api.component';
 import { CallbackComponent } from './callback/callback.component';
+import { HotTopicsComponent } from './hot-topics/hot-topics.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { CallbackComponent } from './callback/callback.component';
     ProfileComponent,
     EnaComponent,
     ExternalApiComponent,
-    CallbackComponent
+    CallbackComponent,
+    HotTopicsComponent
   ],
   imports: [
     BrowserModule,

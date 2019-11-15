@@ -9,7 +9,7 @@
 
 .special-bold,
 a.ui.item,
-.ui.menu *,
+.ui.menu a,
 form.ui *,
 .ui.label,
 .ui.button,
